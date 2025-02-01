@@ -1,3 +1,3 @@
 #Мое резюме
 ##
-[HTML & CSS](https://github.com/goodsanta/resume)
+[HTML & CSS](https://goodsanta.github.io/resume/)
