@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+    <div class="info">
 
-    <img src="images/avatar.jpeg" alt="avatar" width="200">
+    <img src="images/avatar.jpeg" alt="avatar" width="200" class="avatar">
+
+        <div class="info-text">
 
     <h1>My resume</h1>
 
@@ -23,26 +28,30 @@
     |
     <a href="https://vk.com/hndsm2" target="_blank">VK</a>
 
+    </div>
+</div>  
+<div class="card bg-green">
     <h2>Мои хобби</h2>
 
-    <ol>
+    <ol class="list">
         <li>Путешествие</li>
         <li>Чтение</li>
         <li>Велосипед</li>
     </ol>
-
+</div>
+<div class="card bg-red">
     <h2>Опыт работы</h2>
 
-    <table>
-        <thead>
+    <table class="table">
+       <!--  <thead>
             <tr>
                 <tr>Название работы</tr>
                 <th>Должность</th>
                 <th>Год</th>
             </tr>
-        </thead>
+        </thead> -->
         <tbody>
-            <tr>
+            <tr>    
                 <td>becbt.online</td>
                 <td>Tester</td>
                 <td>2021-2023</td>
@@ -54,25 +63,37 @@
             </tr>
         </tbody>
     </table>
+</div>
+<div class="card bg-yellow">
+    <h2>Курсы</h2>
+    <ul class="link-list">
+        <li><a href="#">Frontend</a></li>
+        <li><a href="#">All</a></li>
+    </ul>
+</div>
 
-    <h2>Связаться со мной</h2>
+    
 
-    <form action="/">
-
-        <div>
+    <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+        <div class="form-row">
+        <div class="form-group">
             <label for="name">Ваше имя</label>
             <input type="text" id="name" placeholder="Введите имя">
         </div>
-        <div>
+        <div class="form-group">
             <label for="email">Ваше имя</label>
             <input type="email" id="email" placeholder="Введите email">
         </div>
-        <div>
+    </div>
+        <div class="form-group">
             <label for="message">Ваше сообщение</label>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
             
         </div>
-        <input type="submit" value="Отправить">
+        
+        <input class="btn" type="submit" value="Отправить">
     </form>
+</div>
 </body>
 </html>
